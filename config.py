@@ -1,0 +1,5 @@
+host = "localhost"
+port = "8889"
+user = "root"
+password = "root"
+db_name = "diplom_test"

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>801</width>
+    <height>694</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Labor protection</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(25, 25, 25, 255);
+font-family: Roboto;
+color:white;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="btn_staff">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+color: white;
+background-color: rgba(9, 9, 9, 100);
+text-align: left;
+width: 260px;
+height: 50px;
+}
+
+QPushButton:hover {
+background-color: rgba(255,85, 127, 100);
+}
+
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 70);
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Кадровий облік</string>
+        </property>
+        <property name="icon">
+         <iconset resource="res-rc.qrc">
+          <normaloff>:/icon/icons/recent_actors_white_24dp.svg</normaloff>:/icon/icons/recent_actors_white_24dp.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_studydoc">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+color: white;
+background-color: rgba(9, 9, 9, 100);
+text-align: left;
+width: 260px;
+height: 50px;
+}
+
+QPushButton:hover {
+background-color: rgba(255,85, 127, 100);
+}
+
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 70);
+}</string>
+        </property>
+        <property name="text">
+         <string>Навчальна документація</string>
+        </property>
+        <property name="icon">
+         <iconset resource="res-rc.qrc">
+          <normaloff>:/icon/icons/text_snippet_white_24dp.svg</normaloff>:/icon/icons/text_snippet_white_24dp.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_group">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+color: white;
+background-color: rgba(9, 9, 9, 100);
+text-align: left;
+width: 260px;
+height: 50px;
+}
+
+QPushButton:hover {
+background-color: rgba(255,85, 127, 100);
+}
+
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 70);
+}</string>
+        </property>
+        <property name="text">
+         <string>Навчальні групи</string>
+        </property>
+        <property name="icon">
+         <iconset resource="res-rc.qrc">
+          <normaloff>:/icon/icons/groups_white_24dp.svg</normaloff>:/icon/icons/groups_white_24dp.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_book">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+color: white;
+background-color: rgba(9, 9, 9, 100);
+text-align: left;
+width: 260px;
+height: 50px;
+}
+
+QPushButton:hover {
+background-color: rgba(255,85, 127, 100);
+}
+
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 70);
+}</string>
+        </property>
+        <property name="text">
+         <string>Навчальні матеріали</string>
+        </property>
+        <property name="icon">
+         <iconset resource="res-rc.qrc">
+          <normaloff>:/icon/icons/menu_book_white_24dp.svg</normaloff>:/icon/icons/menu_book_white_24dp.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_test">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+color: white;
+background-color: rgba(9, 9, 9, 100);
+text-align: left;
+width: 260px;
+height: 50px;
+}
+
+QPushButton:hover {
+background-color: rgba(255,85, 127, 100);
+}
+
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 70);
+}</string>
+        </property>
+        <property name="text">
+         <string>Перевірка знань</string>
+        </property>
+        <property name="icon">
+         <iconset resource="res-rc.qrc">
+          <normaloff>:/icon/icons/fact_check_white_24dp.svg</normaloff>:/icon/icons/fact_check_white_24dp.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_analis">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+color: white;
+background-color: rgba(9, 9, 9, 100);
+text-align: left;
+width: 260px;
+height: 50px;
+}
+
+QPushButton:hover {
+background-color: rgba(255,85, 127, 100);
+}
+
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 70);
+}</string>
+        </property>
+        <property name="text">
+         <string>Аналітичні звіти</string>
+        </property>
+        <property name="icon">
+         <iconset resource="res-rc.qrc">
+          <normaloff>:/icon/icons/analitics_white_24dp.svg</normaloff>:/icon/icons/analitics_white_24dp.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_settings">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+color: white;
+background-color: rgba(9, 9, 9, 100);
+text-align: left;
+width: 260px;
+height: 50px;
+}
+
+QPushButton:hover {
+background-color: rgba(255,85, 127, 100);
+}
+
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 70);
+}</string>
+        </property>
+        <property name="text">
+         <string>Налаштування</string>
+        </property>
+        <property name="icon">
+         <iconset resource="res-rc.qrc">
+          <normaloff>:/icon/icons/settings_white_24dp.svg</normaloff>:/icon/icons/settings_white_24dp.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res-rc.qrc"/>
+  <include location="res-rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

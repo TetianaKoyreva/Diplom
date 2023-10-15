@@ -1,0 +1,20 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>icons/recent_actors_white_24dp.svg</file>
+    <file>icons/groups_white_24dp.svg</file>
+    <file>icons/analitics_white_24dp.svg</file>
+    <file>icons/contact_page_white_24dp.svg</file>
+    <file>icons/dvr_white_24dp.svg</file>
+    <file>icons/event_note_white_24dp.svg</file>
+    <file>icons/exit_to_app_white_24dp.svg</file>
+    <file>icons/fact_check_white_24dp.svg</file>
+    <file>icons/groups_white_24dp.svg</file>
+    <file>icons/lock_white_24dp.svg</file>
+    <file>icons/menu_book_white_24dp.svg</file>
+    <file>icons/mode_white_24dp.svg</file>
+    <file>icons/password_white_24dp.svg</file>
+    <file>icons/person_add_white_24dp.svg</file>
+    <file>icons/text_snippet_white_24dp.svg</file>
+    <file>icons/settings_white_24dp.svg</file>
+  </qresource>
+</RCC>

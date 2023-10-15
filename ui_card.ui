@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form_Employee</class>
+ <widget class="QWidget" name="Form_Employee">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1063</width>
+    <height>680</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>50</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(25, 25, 25, 255);
+font-family: Roboto;
+color:white;</string>
+  </property>
+  <widget class="QLabel" name="label_employee">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>20</y>
+     <width>204</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Roboto</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>Картотека персоналу</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget_employee">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>160</y>
+     <width>871</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableView {
+color: white;
+background-color: rgba(9,9, 9, 100);
+}
+QTableView:section {
+background-color: rgba(127,152, 127, 100);
+color: white;
+height: 50px;
+font-size: 14pt;
+}
+QTableView:item {
+border-stile:none;
+border_bottom:rgba(255, 255, 255, 70);
+}
+QTableView:item:selected {
+border-stile:none;
+border_bottom:rgba(255, 255, 255, 70);
+background-color: rgba(127,152, 127, 50)
+}</string>
+   </property>
+   <property name="showGrid">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_testinformation">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>540</y>
+     <width>241</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Roboto</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+color: white;
+background-color: rgba(89,89, 89, 100);
+border-radius: 4 px;
+border-color: rgb(127, 152, 110);
+text-align: center;
+width: 260px;
+height: 50px;
+}
+QPushButton:hover {
+background-color: rgba(127,152, 127, 100);
+}
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 70);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Відомості про перевірку знань</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_add_cart">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>610</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Roboto</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+color: white;
+background-color: rgba(89,89, 89, 100);
+border-radius: 4 px;
+border-color: rgb(127, 152, 110);
+text-align: center;
+width: 260px;
+height: 50px;
+}
+QPushButton:hover {
+background-color: rgba(127,152, 127, 100);
+}
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 70);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Додати картку</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_intruction">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>540</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Roboto</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+color: white;
+background-color: rgba(89,89, 89, 100);
+border-radius: 4 px;
+border-color: rgb(127, 152, 110);
+text-align: center;
+width: 260px;
+height: 50px;
+}
+QPushButton:hover {
+background-color: rgba(127,152, 127, 100);
+}
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 70);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Інструктажі</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_stag">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>540</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Roboto</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+color: white;
+background-color: rgba(89,89, 89, 100);
+border-radius: 4 px;
+border-color: rgb(127, 152, 110);
+text-align: center;
+width: 260px;
+height: 50px;
+}
+QPushButton:hover {
+background-color: rgba(127,152, 127, 100);
+}
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 70);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Стажування</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_print_sort">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>610</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Roboto</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+color: white;
+background-color: rgba(89,89, 89, 100);
+border-radius: 4 px;
+border-color: rgb(127, 152, 110);
+text-align: center;
+width: 260px;
+height: 50px;
+}
+QPushButton:hover {
+background-color: rgba(127,152, 127, 100);
+}
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 70);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Друк</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_quit_cart">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>610</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Roboto</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+color: white;
+background-color: rgba(89,89, 89, 100);
+border-radius: 4 px;
+border-color: rgb(127, 152, 110);
+text-align: center;
+width: 260px;
+height: 50px;
+}
+QPushButton:hover {
+background-color: rgba(127,152, 127, 100);
+}
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 70);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Вихід</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>40</y>
+     <width>602</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>41</number>
+    </property>
+    <property name="leftMargin">
+     <number>20</number>
+    </property>
+    <property name="topMargin">
+     <number>20</number>
+    </property>
+    <property name="rightMargin">
+     <number>20</number>
+    </property>
+    <item>
+     <widget class="QPushButton" name="btn_sort_department">
+      <property name="font">
+       <font>
+        <family>Roboto</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+color: white;
+background-color: rgba(89,89, 89, 100);
+border-radius: 4 px;
+border-color: rgb(127, 152, 110);
+text-align: center;
+width: 260px;
+height: 50px;
+}
+QPushButton:hover {
+background-color: rgba(127,152, 127, 100);
+}
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 70);
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>Сортування за підрозділами</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_sort_profession">
+      <property name="font">
+       <font>
+        <family>Roboto</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+color: white;
+background-color: rgba(89,89, 89, 100);
+border-radius: 4 px;
+border-color: rgb(127, 152, 110);
+text-align: center;
+width: 260px;
+height: 50px;
+}
+QPushButton:hover {
+background-color: rgba(127,152, 127, 100);
+}
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 70);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Сортування за посадою</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>41</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="btn_staff">
+      <property name="minimumSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto</family>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+color: white;
+background-color: rgba(9, 9, 9, 100);
+text-align: left;
+width: 260px;
+height: 50px;
+text-align: center;
+}
+
+QPushButton:hover {
+background-color: rgba(255,85, 127, 100);
+}
+
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 70);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="res-rc.qrc">
+        <normaloff>:/icon/icons/recent_actors_white_24dp.svg</normaloff>:/icon/icons/recent_actors_white_24dp.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="default">
+       <bool>true</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_studydoc">
+      <property name="minimumSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+color: white;
+background-color: rgba(9, 9, 9, 100);
+text-align: left;
+width: 260px;
+height: 50px;
+text-align: center;
+}
+
+QPushButton:hover {
+background-color: rgba(255,85, 127, 100);
+}
+
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 70);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="res-rc.qrc">
+        <normaloff>:/icon/icons/text_snippet_white_24dp.svg</normaloff>:/icon/icons/text_snippet_white_24dp.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_group">
+      <property name="minimumSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+color: white;
+background-color: rgba(9, 9, 9, 100);
+text-align: left;
+width: 260px;
+height: 50px;
+text-align: center;
+}
+
+QPushButton:hover {
+background-color: rgba(255,85, 127, 100);
+}
+
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 70);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="res-rc.qrc">
+        <normaloff>:/icon/icons/groups_white_24dp.svg</normaloff>:/icon/icons/groups_white_24dp.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_book">
+      <property name="minimumSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+color: white;
+background-color: rgba(9, 9, 9, 100);
+text-align: left;
+width: 260px;
+height: 50px;
+text-align: center;
+}
+
+QPushButton:hover {
+background-color: rgba(255,85, 127, 100);
+}
+
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 70);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="res-rc.qrc">
+        <normaloff>:/icon/icons/menu_book_white_24dp.svg</normaloff>:/icon/icons/menu_book_white_24dp.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_test">
+      <property name="minimumSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+color: white;
+background-color: rgba(9, 9, 9, 100);
+text-align: left;
+width: 260px;
+height: 50px;
+text-align: center;
+}
+
+QPushButton:hover {
+background-color: rgba(255,85, 127, 100);
+}
+
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 70);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="res-rc.qrc">
+        <normaloff>:/icon/icons/fact_check_white_24dp.svg</normaloff>:/icon/icons/fact_check_white_24dp.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_analys">
+      <property name="minimumSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+color: white;
+background-color: rgba(9, 9, 9, 100);
+text-align: left;
+width: 260px;
+height: 50px;
+text-align: center;
+}
+
+QPushButton:hover {
+background-color: rgba(255,85, 127, 100);
+}
+
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 70);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="res-rc.qrc">
+        <normaloff>:/icon/icons/analitics_white_24dp.svg</normaloff>:/icon/icons/analitics_white_24dp.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="btn_cart">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>540</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Roboto</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+color: white;
+background-color: rgba(89,89, 89, 100);
+border-radius: 4 px;
+border-color: rgb(127, 152, 110);
+text-align: center;
+width: 260px;
+height: 50px;
+}
+QPushButton:hover {
+background-color: rgba(127,152, 127, 100);
+}
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 70);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Особиста картка</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res-rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
